@@ -1,0 +1,145 @@
+.headline, .explain,{
+  position: relative;
+  text-align: center;
+  padding:6rem 0;
+  @include backgroundFull;
+}
+.headline__title, .explain__title{
+  @include donutFont;
+  font-size: 3.5rem;
+}
+.explain__text{
+  max-width: 500px;
+  margin:auto;
+  line-height: 1.5;
+}
+.headline__eyebrow, .headline__subhead{
+  font-style:italic;
+}
+
+.tastyRow__col{
+  padding:2rem 1rem 2.4rem 1rem;
+}
+.tastyRow__header{
+  text-align: center;
+  color:white;
+  @include donutFont;
+  font-size: 2rem;
+}
+.tastyRow__icon{
+  text-align: center;
+}
+.tastyRow__icon img{
+  width:100%;
+  max-width: 200px;
+}
+.tastyRow__text{
+  max-width: 350px;
+  margin:auto;
+  line-height: 1.4;
+}
+.tastyRow__col--hot{
+  background:aquamarine;
+}
+.tastyRow__col--delicious{
+  background: rgba(255, 239, 0, .7);
+}
+.tastyRow__col--tasty{
+  background: rgba(0, 120, 255, .7);
+}
+.blurbRow{
+  width: 85%;
+  margin:auto;
+  text-align: center;
+}
+.blurbRow__col--icon img{
+  width: 200px;
+  margin:auto;
+}
+
+.explain{
+    @include backgroundFull('http://localhost:3000/public/assets/donut-sprinkle.jpg')
+    padding:1rem 0;
+}
+.blurbRow__title{
+  margin-bottom:1rem;
+  @include donutFont;
+  font-size: 1.9rem;
+}
+.blurbRow__subhead{
+  font-size:1.16rem;
+}
+@media screen and (min-width: 640px){
+  .headline{
+    height: 200px;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .headline__wrapper{
+    position: absolute;
+    top:8rem;
+    width: 100%;
+  }
+  .headline__title{
+    font-size:5.5rem;
+  }
+  .tastyRow__header{
+    font-size:3rem;
+  }
+
+}
+@media screen and (min-width: 768px){
+  .headline{
+    height: 300px;
+  }
+  .headline__wrapper{
+    top:10rem;
+    left:0;
+    width: 100%;
+  }
+  .headline__title{
+    font-size:7rem;
+    margin-left:-2.6rem;
+  }
+  .tastyRow{
+    display: table;
+    width: 100%;
+    max-width: 1700px;
+    margin:auto;
+  }
+  .tastyRow__col{
+    display:table-cell;
+    width: 33%;
+  }
+  .explain{
+    background-position: center;
+    padding:4rem 0;
+    background-attachment: fixed;
+  }
+  .explainblurbRow{
+    max-width: 500px;
+    margin:auto;
+  }
+  .blurbRow{
+    display:table;
+    padding-top:2rem;
+  }
+  .blurbRow__col{
+    display:table-cell;
+  }
+  .blurbRow__col--text{
+    vertical-align: middle;
+    width: 60%;
+    text-align: left;
+  }
+  .blurbRow__subhead{
+    max-width:500px;
+
+  }
+  .blurbRow__col--icon{
+    width: 40%;
+    text-align: right;
+    padding-right:3rem;
+  }
+
+}
