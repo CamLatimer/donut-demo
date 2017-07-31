@@ -71,13 +71,15 @@
 }
 @media screen and (min-width: 640px){
   .headline{
-    height: 200px;
+    height: 350px;
+    position: relative;
+    z-index:-1;
     background-position: center;
     background-attachment: fixed;
   }
   .headline__wrapper{
     position: absolute;
-    top:8rem;
+    top:14rem;
     width: 100%;
   }
   .headline__title{
@@ -90,10 +92,10 @@
 }
 @media screen and (min-width: 768px){
   .headline{
-    height: 300px;
+    height: 400px;
   }
   .headline__wrapper{
-    top:10rem;
+    // top:14rem;
     left:0;
     width: 100%;
   }

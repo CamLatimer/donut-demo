@@ -1,7 +1,13 @@
 footer{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding:1rem 0;
 }
 .infoIcon{
   width: 40px; height: 40px;
   margin:1rem;
 }
+// .infoIcon img{
+//   width: 40px; height: 40px;
+//
+// }
