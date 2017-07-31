@@ -13,35 +13,29 @@ color:darken(gray, 25%);
   font-family: 'Indie Flower', cursive;
   font-style:italic;
 }
-@mixin backgroundFull($url: 'http://localhost:3000/public/assets/donuts-headline.jpg', $colorA: rgba(0, 220, 255, .4), $colorB: rgba(255, 0, 125, .9)) {
+@mixin backgroundFull($url: 'http://localhost:3000/public/assets/donuts-headline.jpg', $colorA: rgba(0, 220, 255, .8), $colorB: rgba(255, 0, 25, .9)) {
   background:linear-gradient($colorA, $colorB ),  url($url);
   background-size:cover;
+  background-position: bottom;
   background-repeat: no-repeat;
   color:white;
 }
 .bodyWrapper{
   position: relative;
   @media screen and (max-width:640px){
-    top:100px;
+    top:70px;
   }
 }
 a{
   color:black;text-decoration: none;
 }
-  a:hover{
-    animation-name: linkTilt;
-    animation-duration: .4s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-  }
 
-.nav__link--socia:a{
+a:hover{
     animation-name: linkTilt;
-    animation-duration: .4s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes linkTilt {
